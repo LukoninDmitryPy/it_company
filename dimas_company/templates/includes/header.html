@@ -1,0 +1,24 @@
+
+<header>
+  <nav class="navbar navbar-light" style="background-color: lightskyblue">
+    <div class="container">
+      <a class="navbar-brand" href="">
+        <span style="color:red">Ya</span>tube
+      </a>
+      {% with request.resolver_match.view_name as view_name %}
+      <ul class="nav nav-pills">
+        <li>
+          Пользователь: 
+        <li>
+        <li class="nav-item"> 
+          <a class="nav-link link-light" href="">Войти</a>
+        </li>
+        <li class="nav-item"> 
+          <a class="nav-link link-light" href="">Регистрация</a>
+        </li>
+      </ul>
+      {% endwith %} 
+      {# Конец добавленого в спринте #}
+    </div>
+  </nav>      
+</header> 
